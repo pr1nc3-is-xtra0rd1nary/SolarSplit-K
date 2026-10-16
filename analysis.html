@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SolarSplit-K | Data Entry</title>
+    <meta name="description" content="Enter, edit, import, and export SolarSplit-K experimental trial data with clear simulated-data labeling." />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="data">
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <div class="brand-block">
+          <div class="brand-mark">S</div>
+          <div>
+            <div class="brand-name">SolarSplit-K</div>
+            <div class="brand-tag">Science fair research tracker</div>
+          </div>
+        </div>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="research.html">Research</a>
+          <a href="planner.html">Planner</a>
+          <a href="data.html" class="active">Data</a>
+          <a href="analysis.html">Analysis</a>
+          <a href="comparison.html">Comparison</a>
+          <a href="safety.html">Safety</a>
+          <a href="log.html">Log</a>
+          <a href="literature.html">Literature</a>
+          <a href="budget.html">Budget</a>
+          <a href="presentation.html">Presentation</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-shell">
+      <div class="container">
+        <section class="page-intro">
+          <p class="eyebrow">Data and records</p>
+          <h1>Trial data entry</h1>
+        </section>
+
+        <div class="notice warning">
+          <strong>SIMULATED EXAMPLE DATA ONLY.</strong> This dataset is not real research. Never mix simulated data with actual observations.
+        </div>
+
+        <div class="toolbar">
+          <button id="export-csv" class="button primary" type="button">Export CSV</button>
+          <label class="button secondary file-button">
+            Import CSV
+            <input id="import-csv" type="file" accept=".csv,text/csv" />
+          </label>
+          <button id="reset-data" class="button danger" type="button">Reset to SIMULATED sample</button>
+        </div>
+
+        <div class="panel-block">
+          <h2>Trial list</h2>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Trial</th>
+                  <th>Date</th>
+                  <th>Reactor</th>
+                  <th>Light (lux)</th>
+                  <th>Temp (°C)</th>
+                  <th>Time (min)</th>
+                  <th>H₂</th>
+                  <th>O₂</th>
+                  <th>Notes</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody id="trial-table-body"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-row">
+        <p>All records should be labeled clearly as real or simulated.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

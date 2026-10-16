@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SolarSplit-K | Competition Presentation</title>
+    <meta name="description" content="Prepare a science fair abstract, poster outline, methodology, results, limitations, originality statement, future work, and judge questions for SolarSplit-K." />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="presentation">
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <div class="brand-block">
+          <div class="brand-mark">S</div>
+          <div>
+            <div class="brand-name">SolarSplit-K</div>
+            <div class="brand-tag">Science fair research tracker</div>
+          </div>
+        </div>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="research.html">Research</a>
+          <a href="planner.html">Planner</a>
+          <a href="data.html">Data</a>
+          <a href="analysis.html">Analysis</a>
+          <a href="comparison.html">Comparison</a>
+          <a href="safety.html">Safety</a>
+          <a href="log.html">Log</a>
+          <a href="literature.html">Literature</a>
+          <a href="budget.html">Budget</a>
+          <a href="presentation.html" class="active">Presentation</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-shell">
+      <div class="container">
+        <section class="page-intro">
+          <p class="eyebrow">Competition presentation</p>
+          <h1>Prepare your final story</h1>
+        </section>
+
+        <form id="presentation-form" class="planner-form">
+          <div class="form-grid">
+            <label class="full-width">
+              Abstract
+              <textarea id="abstract" rows="5" placeholder="Write a concise summary of the purpose, method, and findings."></textarea>
+            </label>
+            <label class="full-width">
+              Poster outline
+              <textarea id="poster-outline" rows="4" placeholder="Title, research question, method, data, result, discussion, future work."></textarea>
+            </label>
+            <label class="full-width">
+              Methodology
+              <textarea id="methodology" rows="4" placeholder="Describe the reactor, materials, light source, and measurement process."></textarea>
+            </label>
+            <label class="full-width">
+              Results
+              <textarea id="results" rows="4" placeholder="State what the data suggest and what remains uncertain."></textarea>
+            </label>
+            <label class="full-width">
+              Limitations
+              <textarea id="limitations" rows="4" placeholder="List constraints, missing data, and confounding variables."></textarea>
+            </label>
+            <label class="full-width">
+              Originality statement
+              <textarea id="originality" rows="3" placeholder="Explain exactly what is original or novel in your project, if supported by the literature. If not supported, say so honestly."></textarea>
+            </label>
+            <label class="full-width">
+              Future work
+              <textarea id="future-work" rows="3" placeholder="What should be studied next to improve the evidence?"></textarea>
+            </label>
+            <label class="full-width">
+              Possible judge questions
+              <textarea id="judge-questions" rows="4" placeholder="List likely questions and your short answers."></textarea>
+            </label>
+          </div>
+          <div class="button-row">
+            <button type="submit" class="button primary">Save presentation notes</button>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-row">
+        <p>Honest limitations often impress judges more than overclaiming.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

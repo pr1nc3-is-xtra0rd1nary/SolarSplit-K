@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SolarSplit-K | Literature Review</title>
+    <meta name="description" content="Capture literature review sources, findings, limitations, and the difference between published claims and your observations for SolarSplit-K." />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="literature">
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <div class="brand-block">
+          <div class="brand-mark">S</div>
+          <div>
+            <div class="brand-name">SolarSplit-K</div>
+            <div class="brand-tag">Science fair research tracker</div>
+          </div>
+        </div>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="research.html">Research</a>
+          <a href="planner.html">Planner</a>
+          <a href="data.html">Data</a>
+          <a href="analysis.html">Analysis</a>
+          <a href="comparison.html">Comparison</a>
+          <a href="safety.html">Safety</a>
+          <a href="log.html">Log</a>
+          <a href="literature.html" class="active">Literature</a>
+          <a href="budget.html">Budget</a>
+          <a href="presentation.html">Presentation</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-shell">
+      <div class="container">
+        <section class="page-intro">
+          <p class="eyebrow">Literature review</p>
+          <h1>Document and compare published ideas</h1>
+        </section>
+
+        <div class="notice info">
+          This page is a template for your own citation record. Enter only real sources you have reviewed. Do not invent papers, authors, or findings.
+        </div>
+
+        <form id="literature-form" class="planner-form">
+          <div class="form-grid">
+            <label>
+              Author(s)
+              <input type="text" id="lit-author" placeholder="Example: Ng, M. and Lee, D." required />
+            </label>
+            <label>
+              Year
+              <input type="text" id="lit-year" placeholder="Example: 2023" required />
+            </label>
+            <label>
+              Publication title
+              <input type="text" id="lit-title" placeholder="Example: Photocatalytic hydrogen production from ..." required />
+            </label>
+            <label>
+              Journal / source
+              <input type="text" id="lit-source" placeholder="Example: Renewable Energy" required />
+            </label>
+            <label>
+              URL
+              <input type="url" id="lit-url" placeholder="https://..." required />
+            </label>
+            <label>
+              Main finding
+              <textarea id="lit-finding" rows="3" placeholder="Summarize the study's key conclusion in your own words." required></textarea>
+            </label>
+            <label>
+              Limitation or uncertainty
+              <textarea id="lit-limitation" rows="3" placeholder="List limitations or unresolved questions." required></textarea>
+            </label>
+            <label>
+              My observations vs published claim
+              <textarea id="lit-compare" rows="3" placeholder="Explain the difference between what the paper claims and what you observed in your own trials." required></textarea>
+            </label>
+          </div>
+          <div class="button-row">
+            <button type="submit" class="button primary">Save source</button>
+          </div>
+        </form>
+
+        <div class="panel-block">
+          <h2>Saved sources</h2>
+          <div id="literature-list" class="literature-list"></div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-row">
+        <p>Published claims are not the same as your own observations. Keep both clearly separate.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

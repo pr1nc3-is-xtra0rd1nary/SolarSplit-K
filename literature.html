@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SolarSplit-K | Research Log</title>
+    <meta name="description" content="Research log for SolarSplit-K: design changes, observations, failures, and lessons learned." />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="log">
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <div class="brand-block">
+          <div class="brand-mark">S</div>
+          <div>
+            <div class="brand-name">SolarSplit-K</div>
+            <div class="brand-tag">Science fair research tracker</div>
+          </div>
+        </div>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="research.html">Research</a>
+          <a href="planner.html">Planner</a>
+          <a href="data.html">Data</a>
+          <a href="analysis.html">Analysis</a>
+          <a href="comparison.html">Comparison</a>
+          <a href="safety.html">Safety</a>
+          <a href="log.html" class="active">Log</a>
+          <a href="literature.html">Literature</a>
+          <a href="budget.html">Budget</a>
+          <a href="presentation.html">Presentation</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-shell">
+      <div class="container">
+        <section class="page-intro">
+          <p class="eyebrow">Research notebook</p>
+          <h1>Design changes and lessons learned</h1>
+        </section>
+
+        <form id="log-form" class="planner-form">
+          <div class="form-grid">
+            <label>
+              Date
+              <input type="date" id="log-date" required />
+            </label>
+            <label>
+              Entry title
+              <input type="text" id="log-title" placeholder="Example: Changed reactor surface" required />
+            </label>
+            <label class="full-width">
+              Details
+              <textarea id="log-details" rows="5" placeholder="Record what changed, what you observed, failures, or what you learned." required></textarea>
+            </label>
+          </div>
+          <div class="button-row">
+            <button type="submit" class="button primary">Save log entry</button>
+          </div>
+        </form>
+
+        <div class="panel-block">
+          <h2>Log entries</h2>
+          <div id="log-list" class="log-list"></div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-row">
+        <p>Your research log should capture not only successes, but also failed tests and their lessons.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

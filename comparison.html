@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SolarSplit-K | Analysis</title>
+    <meta name="description" content="Analyze SolarSplit-K experiment results with charts, summary statistics, and scientific warnings." />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body data-page="analysis">
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <div class="brand-block">
+          <div class="brand-mark">S</div>
+          <div>
+            <div class="brand-name">SolarSplit-K</div>
+            <div class="brand-tag">Science fair research tracker</div>
+          </div>
+        </div>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="research.html">Research</a>
+          <a href="planner.html">Planner</a>
+          <a href="data.html">Data</a>
+          <a href="analysis.html" class="active">Analysis</a>
+          <a href="comparison.html">Comparison</a>
+          <a href="safety.html">Safety</a>
+          <a href="log.html">Log</a>
+          <a href="literature.html">Literature</a>
+          <a href="budget.html">Budget</a>
+          <a href="presentation.html">Presentation</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-shell">
+      <div class="container">
+        <section class="page-intro">
+          <p class="eyebrow">Analysis dashboard</p>
+          <h1>Evaluate evidence</h1>
+        </section>
+
+        <div id="analysis-summary" class="card-grid four-up"></div>
+        <div class="notice caution">
+          Correlation is not proof of causation. A design may appear better because of light, temperature, flow, or measurement differences. Look for repeatability, controls, and verified gas data before drawing a firm conclusion.
+        </div>
+
+        <div class="grid-two">
+          <div class="panel-block">
+            <h2>Gas production rate by trial</h2>
+            <canvas id="rateChart"></canvas>
+          </div>
+          <div class="panel-block">
+            <h2>Group summary</h2>
+            <div id="group-summary"></div>
+          </div>
+        </div>
+
+        <div class="panel-block">
+          <h2>Warnings and notes</h2>
+          <ul id="analysis-warnings" class="standard-list"></ul>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-row">
+        <p>Compare measured gas-production rates only when real verified values use compatible units and methods.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

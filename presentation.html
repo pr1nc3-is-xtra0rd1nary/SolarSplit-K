@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SolarSplit-K | Budget</title>
+    <meta name="description" content="Budget tracker in Kenyan shillings for the SolarSplit-K project, including editable cost entries and totals." />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="budget">
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <div class="brand-block">
+          <div class="brand-mark">S</div>
+          <div>
+            <div class="brand-name">SolarSplit-K</div>
+            <div class="brand-tag">Science fair research tracker</div>
+          </div>
+        </div>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="research.html">Research</a>
+          <a href="planner.html">Planner</a>
+          <a href="data.html">Data</a>
+          <a href="analysis.html">Analysis</a>
+          <a href="comparison.html">Comparison</a>
+          <a href="safety.html">Safety</a>
+          <a href="log.html">Log</a>
+          <a href="literature.html">Literature</a>
+          <a href="budget.html" class="active">Budget</a>
+          <a href="presentation.html">Presentation</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-shell">
+      <div class="container">
+        <section class="page-intro">
+          <p class="eyebrow">Project budget</p>
+          <h1>Estimated costs in KES</h1>
+        </section>
+
+        <div class="notice info">
+          Prices are estimates until verified. Always label budget numbers clearly as estimated costs.
+        </div>
+
+        <div class="panel-block">
+          <h2>Budget table</h2>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Item</th>
+                  <th>Qty</th>
+                  <th>Unit price (KES)</th>
+                  <th>Notes</th>
+                  <th>Subtotal (KES)</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody id="budget-body"></tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="panel-block">
+          <h2>Total estimated cost</h2>
+          <p class="total-value" id="budget-total">KES 0.00</p>
+          <button id="add-budget-row" class="button primary" type="button">Add item</button>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-row">
+        <p>Your budget should show the cost of materials and lab supplies, not only the value of the final idea.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

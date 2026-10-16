@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SolarSplit-K | Trial Planner</title>
+    <meta name="description" content="Plan a photocatalytic water-splitting trial with trial name, date, reactor label, light, temperature, duration, notes, and verified gas measurements." />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="planner">
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <div class="brand-block">
+          <div class="brand-mark">S</div>
+          <div>
+            <div class="brand-name">SolarSplit-K</div>
+            <div class="brand-tag">Science fair research tracker</div>
+          </div>
+        </div>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="research.html">Research</a>
+          <a href="planner.html" class="active">Planner</a>
+          <a href="data.html">Data</a>
+          <a href="analysis.html">Analysis</a>
+          <a href="comparison.html">Comparison</a>
+          <a href="safety.html">Safety</a>
+          <a href="log.html">Log</a>
+          <a href="literature.html">Literature</a>
+          <a href="budget.html">Budget</a>
+          <a href="presentation.html">Presentation</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-shell">
+      <div class="container">
+        <section class="page-intro">
+          <p class="eyebrow">Experiment planner</p>
+          <h1>Plan a trial</h1>
+        </section>
+
+        <form id="trial-form" class="planner-form">
+          <div class="form-grid">
+            <label>
+              Trial name
+              <input type="text" id="trial-name" placeholder="Example: Reactor A-Week 2" required />
+            </label>
+            <label>
+              Date
+              <input type="date" id="trial-date" required />
+            </label>
+            <label>
+              Reactor design label
+              <input type="text" id="reactor-label" placeholder="Example: Baseline-Glass, TiO2-coated, etc." required />
+            </label>
+            <label>
+              Light intensity (lux)
+              <input type="number" id="light-lux" min="0" step="1" placeholder="Example: 15000" required />
+            </label>
+            <label>
+              Temperature (°C)
+              <input type="number" id="temp-c" min="0" step="0.1" placeholder="Example: 29.5" required />
+            </label>
+            <label>
+              Exposure duration (minutes)
+              <input type="number" id="duration-min" min="1" step="1" placeholder="Example: 60" required />
+            </label>
+            <label class="full-width">
+              Notes
+              <textarea id="notes" rows="4" placeholder="Document what you changed, what you observed, and any unusual events."></textarea>
+            </label>
+
+            <div class="gas-recording full-width">
+              <h3>Optional verified gas measurements</h3>
+              <p class="small-note">Only record values when they were measured by a suitable, qualified method. Do not claim verified gas output without appropriate measurement evidence.</p>
+              <div class="form-grid compact-grid">
+                <label>
+                  Hydrogen amount
+                  <input type="number" id="h2-amount" min="0" step="0.01" placeholder="Example: 2.4" />
+                </label>
+                <label>
+                  Hydrogen unit
+                  <input type="text" id="h2-unit" placeholder="mL or mmol" />
+                </label>
+                <label>
+                  Hydrogen measurement method
+                  <input type="text" id="h2-method" placeholder="Example: GC/TCD, gas syringe, calibrated sensor" />
+                </label>
+                <label>
+                  Oxygen amount
+                  <input type="number" id="o2-amount" min="0" step="0.01" placeholder="Example: 1.3" />
+                </label>
+                <label>
+                  Oxygen unit
+                  <input type="text" id="o2-unit" placeholder="mL or mmol" />
+                </label>
+                <label>
+                  Oxygen measurement method
+                  <input type="text" id="o2-method" placeholder="Example: GC/TCD, calibrated sensor" />
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="button-row">
+            <button type="submit" class="button primary">Save trial</button>
+            <button type="reset" class="button secondary">Clear form</button>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-row">
+        <p>Only save data you have responsibly recorded and verified.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
